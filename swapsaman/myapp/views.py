@@ -37,17 +37,22 @@ def register(request):
         password = request.POST.get('pass')
         check = User.objects.filter(username=email)
         if len(check)==0:
-            #Save data to both tables
             usr = User.objects.create_user(email, email, password)
             usr.first_name = name
             usr.save()
 
-            # profile = Profile(user=usr)
-            # profile.save()
+            
             context['status'] = f"User {name} Registered Successfully!"
         else:
             context['error'] = "A User with this email already exists"
 
+        check_user = authenticate(username=email, password=password)
+        
+        login(request, check_user)
+        if check_user.is_superuser or check_user.is_staff:
+            return HttpResponseRedirect('/admin')
+        return HttpResponseRedirect('/')
+        
     return render(request,'register.html', context)
 
 
