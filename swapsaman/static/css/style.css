@@ -70,7 +70,7 @@ label{
     padding: 10px 20px;
 }
 .banner a:hover {
-	background:#2196f3;
+	background:#03a9f4;
 }
 .modal-header {
     text-align: Center;
@@ -193,7 +193,7 @@ li.dropdown-header {
 .logo a {
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 50px;
-    color: #2196f3;
+    color: #03a9f4;
 	text-decoration:none;
 }
 .logo a span {
@@ -204,7 +204,7 @@ a.account {
     margin-top: 20px;
     font-size: 15px;
     color: #fff;
-    background-color: #2196f3;
+    background-color: #03a9f4;
     padding: 6px 20px;
     text-decoration: none;
 }
@@ -290,7 +290,7 @@ border:1px solid #e7eaed;
 	text-align: center;
 }
 .focus-layout:hover {
-    background-color: #2196f3;
+    background-color: #03a9f4;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -455,8 +455,8 @@ i.real-estate {
 }
 .new_people a{
 	padding: 12px 30px;
-    border: 1px solid #2196f3;
-    color: #2196f3;
+    border: 1px solid #03a9f4;
+    color: #03a9f4;
     text-decoration: none;
     font-size: 16px;
 }
@@ -625,7 +625,7 @@ span.checkbox2 {
 .sign-in-form input[type="submit"] {
 	font-size: 17px;
     color: #fff;
-    background: #2196f3;
+    background: #03a9f4;
     border: none;
     padding: 10px 0;
     width: 45%;
@@ -708,7 +708,7 @@ p.creating{
 	}
 .sign-up h2{
 	margin: 0 0 2em;
-	color:#2196f3;
+	color:#03a9f4;
 	font-size: 20px;
 	}
 .sign-up h6{
@@ -719,7 +719,7 @@ p.creating{
 .sign-up input[type="submit"]{
 	outline: none;
     border: none;
-    background: #2196f3;
+    background: #03a9f4;
     color: #fff;
     font-size: 1em;
     text-align: center;
@@ -876,7 +876,7 @@ ul#flexiselDemo3.nbs-flexisel-nav-left, ul#flexiselDemo3.nbs-flexisel-nav-right 
 	margin-left:5px;
 }
 span.price {
-    background-color: #2196f3;
+    background-color: #03a9f4;
     color: #FFF;
     display: block;
     font-size: 16px;
@@ -912,7 +912,7 @@ span.price:after {
     height: 0;
     border-style: solid;
     border-width: 5px 5px 0 0;
-    border-color: #2196f3 transparent transparent transparent;
+    border-color: #03a9f4 transparent transparent transparent;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -982,7 +982,7 @@ span.price:after {
 }
 h4.footer-head {
     font-size: 28px;
-    color: #2196f3;
+    color: #03a9f4;
     margin-bottom: 16px;
 }
 .footer-grid p {
@@ -1001,7 +1001,7 @@ h4.footer-head {
     font-weight: 400;
 }
 span.hq {
-    color: #2196f3;
+    color: #03a9f4;
     font-size: 1em;
     margin-bottom: 1em;
     display: block;
@@ -1026,7 +1026,7 @@ span.glyphicon.glyphicon-map-marker {
 span.glyphicon.glyphicon-map-marker, span.glyphicon.glyphicon-earphone, .glyphicon.glyphicon-envelope {
     color: #fff;
     font-size: 12px;
-    background-color: #2196f3;
+    background-color: #03a9f4;
     padding: 6px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1054,7 +1054,7 @@ ul.location li:nth-child(2) {
 	margin-left:2px;
 }
 .copyrights p a:hover,.diff p a:hover {
-	color:#2196f3;
+	color:#03a9f4;
 }
 .footer-social-icons ul li {
 	display:inline-block;
@@ -1076,7 +1076,7 @@ ul.location li:nth-child(2) {
     padding: 5px;
     font-size: 14px;
     border-radius: 2px;
-    background: #2196f3;
+    background: #03a9f4;
     visibility: hidden;
     opacity: 0;
     -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1090,7 +1090,7 @@ ul.location li:nth-child(2) {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #2196f3;
+    border-top: 5px solid #03a9f4;
     position: absolute;
     bottom: -5px;
     left: 34px;
@@ -1137,7 +1137,7 @@ ul.location li:nth-child(2) {
 .footer-logo a {
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 40px;
-    color: #2196f3;
+    color: #03a9f4;
     text-decoration: none;
 }
 .footer-logo a span {
@@ -1194,12 +1194,12 @@ ul.resp-tabs-list.hor_1 a {
     text-align: center;
 }
 ul.resp-tabs-list.hor_1 a:hover {
-	color:#2196f3;
+	color:#03a9f4;
 }
 span.total {
     color: #fff;
     font-size: 13px;
-    background: #2196f3;
+    background: #03a9f4;
     padding: 10px 20px;
     margin: 3% 5%;
 	width:90%;
@@ -1248,7 +1248,7 @@ span.total strong {
     font-size: 14px;
 }
 .category-info a:hover {
-	color:#2196f3;
+	color:#03a9f4;
 }
 .sub-categories {
     margin-top: 20px;   
@@ -1267,7 +1267,7 @@ span.total strong {
     font-size: 15px;
 }
 .sub-categories ul li a:hover {
-	color:#2196f3;
+	color:#03a9f4;
 }
 /*-- //Categories --*/
 
@@ -1293,7 +1293,7 @@ span.total strong {
     padding: 40px 0px;
 }
 .state h3 {
-    color: #2196f3;
+    color: #03a9f4;
     font-size: 20px;
 }
 .main-grid-border{
@@ -1312,7 +1312,7 @@ h2.head {
     padding: 0 0 60px 0;
 }
 .tags a:hover {
-	color:#2196f3;
+	color:#03a9f4;
 }
 a.tag1 {
     font-size: 1.8em;
@@ -1407,7 +1407,7 @@ a.tag20 {
 	margin-top:40px;
 }
 .popular-regions h4 {
-	color: #2196f3;
+	color: #03a9f4;
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -1433,7 +1433,7 @@ h4.mpcwc {
     margin-top: 50px;
 }
 .popular-category h4 {
-    color: #2196f3;
+    color: #03a9f4;
     font-size: 20px;
     margin-bottom: 12px;
 }
@@ -1462,7 +1462,7 @@ h4.mpcwc {
 	padding:0 0 40px 0;
 }
 .sitemap-regions h4 {
-	color: #2196f3;
+	color: #03a9f4;
     font-size: 25px;
     margin-bottom: 5px;
 }
@@ -1517,7 +1517,7 @@ h4.mpcwc {
      cursor: pointer;
 }
 .panel-title span {
-	color:#2196f3;
+	color:#03a9f4;
 }
 .panel-body {
 	padding-top:0;
@@ -1555,7 +1555,7 @@ ul.all-cat-list li {
 }
 ul.all-cat-list li a {
     font-size: 14px;
-    color: #2196f3;
+    color: #03a9f4;
 	text-decoration:none;
 }
 ul.all-cat-list li a:hover {
@@ -1660,7 +1660,7 @@ ul.all-cat-list li a:hover {
 }
 .app-bottom-grid i {
 	font-size: 50px;
-    color: #2196f3;
+    color: #03a9f4;
 }
 /*-- //mobile app --*/
 
@@ -1713,11 +1713,11 @@ a.work {
     padding: 11px 23px;
 }
 a.work:hover {
-	background:#2196f3;
+	background:#03a9f4;
 }
 .work-section-grid i {
 	font-size:70px;
-	color:#2196f3;
+	color:#03a9f4;
 }
 .client {
 	float:left;
@@ -1860,7 +1860,7 @@ form .field label {
     position: absolute;
     top: 0;
     left: 0;
-    background: #2196f3;
+    background: #03a9f4;
     width: 100%;
     padding: 16px 0;
     font-size: 15px;
@@ -1955,7 +1955,7 @@ form.submit input[type="submit"] {
     margin-top: 20px;
 }
 form input[type="submit"]:hover {
-    background: #2196f3;
+    background: #03a9f4;
     color: #FFFFFF;
 }
 form input[type="submit"]:focus {
@@ -1976,7 +1976,7 @@ form input[type="submit"]:focus {
 }
 
 #drop a{
-    background-color: #2196f3;
+    background-color: #03a9f4;
     padding: 10px 26px;
     color: #fff;
     cursor: pointer;
@@ -2099,7 +2099,7 @@ form.submit {
 }
 .product-view p a {
     margin-right: 4px;
-    color: #2196f3;
+    color: #03a9f4;
     font-size: 14px;
 }
 .product-desc {
@@ -2128,7 +2128,7 @@ form.submit {
     font-size: 17px;
 }
 .item-price {
-	border: 3px solid #2196f3;
+	border: 3px solid #03a9f4;
     margin-left: 15%;
     padding:0 15px;
 	position:relative;
@@ -2140,7 +2140,7 @@ form.submit {
     left: -50.5%;
     background-color: rgba(0,0,0,0);
     border: 105px solid rgba(0,0,0,0);
-    border-right-color: #2196f3;
+    border-right-color: #03a9f4;
     height: 0;
     width: 0;
     top: -3px;
@@ -2185,7 +2185,7 @@ h3.rate {
 .interested {
     margin: 20px;
     padding: 40px 20px;
-    background: #2196f3;
+    background: #03a9f4;
     margin-left: 15%;
     margin-right: 0;
 }
@@ -2214,7 +2214,7 @@ h3.rate {
 .tips {
     margin: 20px;
     padding: 40px 20px 15px;
-    background: #2196f3;
+    background: #03a9f4;
     margin-left: 15%;
     margin-right: 0;
 }
@@ -2615,7 +2615,7 @@ div#myTabContent {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 .nav-tabs>li>a>span {
-	color:#2196f3;
+	color:#03a9f4;
 }
 .nav-tabs>li {
     cursor: pointer;
@@ -2926,7 +2926,7 @@ section.list-right span.price:after {
 }
 .feed-back-form input[type="submit"]:hover {
 	color: #000;
-	background-color: #2196f3;
+	background-color: #03a9f4;
 }
 /*-- //Feedback-page --*/
 
@@ -2936,7 +2936,7 @@ section.list-right span.price:after {
 }
 .privacy h4 {
     font-size: 25px;
-    color: #2196f3;
+    color: #03a9f4;
 	margin-top: 25px;
 }
 .privacy p{
@@ -2954,7 +2954,7 @@ ol.privacy-start li a,ul.privacy-start li a{
 	line-height: 30px;
 }
 ol.privacy-start li a:hover,ul.privacy-start li a:hover {
-  color: #2196f3;
+  color: #03a9f4;
 }
 .use-privay{
 	padding: 4px 0;
@@ -3008,7 +3008,7 @@ ul.privacy-start {
     padding: 10px 10px 10px 10px;
     width: 70%;
     margin-bottom: 25px;
-    border: 1px solid #2196f3;
+    border: 1px solid #03a9f4;
     outline: none;
     color: #555;
     transition: 0.5s all;
@@ -3025,7 +3025,7 @@ ul.privacy-start {
 	padding: 10px 10px 10px 10px;
     width: 70%;
     margin-bottom: 25px;
-    border: 1px solid #2196f3;
+    border: 1px solid #03a9f4;
     outline: none;
     color: #555;
 }
@@ -3038,7 +3038,7 @@ ul.privacy-start {
 	-ms-transition:0.5s all;
 }
 .post-ad-form form select {
-    border: 1px solid #2196f3;
+    border: 1px solid #03a9f4;
     background-color: #fff;
     padding: 8px;
     width: 30%;
@@ -3118,7 +3118,7 @@ pre
 #messages {
     padding: 15px 10px;
     margin: 15px 0;
-    border: 1px solid #2196f3;
+    border: 1px solid #03a9f4;
 }
 
 #messages p
@@ -3182,7 +3182,7 @@ p.post-terms {
     letter-spacing: 1px;
 }
 p.post-terms a {
-    color: #2196f3;
+    color: #03a9f4;
 }
 /*-- //Post ad --*/
 footer.diff {
@@ -3206,7 +3206,7 @@ footer.diff {
  h3.head-top{
    font-size:2em;
    margin-bottom:1em;
-   color: #2196f3;
+   color: #03a9f4;
 }
 .grid_3 p {
     color: #999;
