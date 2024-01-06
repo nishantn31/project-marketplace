@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+
+	 <section>
+			<div id="page-wrapper" class="sign-in-wrapper">
+				<div class="graphs">
+					<div class="sign-in-form">
+						<div class="sign-in-form-top">
+							<h1>Log in</h1>
+							
+						</div>
+						<div class="signin">
+							<div class="signin-rit">
+								<!-- <span class="checkbox1">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Forgot Password ?</label>
+								</span> -->
+								<!-- <p><a href="#">Click Here</a> </p> -->
+								<div class="clearfix"> </div>
+							</div>
+							<form method="POST">
+
+								{% csrf_token %}
+								
+								{% if message %}
+									<div class="form-group">
+										<p class="alert {{class}}">{{message}}</p>
+									</div>
+								{% endif %} 
+							<div class="log-input">
+								<div class="log-input-left">
+								   <input type="email" name="email" class="user" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}"/>
+								</div>
+								<!-- <span class="checkbox2">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
+								</span> -->
+								<div class="clearfix"> </div>
+							</div>
+							<div class="log-input">
+								<div class="log-input-left">
+								   <input type="password" name="password" class="lock" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address:';}"/>
+								</div>
+								<!-- <span class="checkbox2">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
+								</span> -->
+								<div class="clearfix"> </div>
+							</div>
+							<input type="submit" name="signin" value="Log in">
+							</form>	 
+						</div>
+							
+
+
+
+
+
+
+
+							<!-- <div> -->
+							<!-- <form method="POST" class="col-6 mx-auto card p-3 shadow-lg" id="login-form">
+								{% csrf_token %}
+								
+								{% if message %}
+									<div class="form-group">
+										<p class="alert {{class}}">{{message}}</p>
+									</div>
+								{% endif %} -->
+								<!-- <div class="form-group">
+									<label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+									<input type="email" name="email" id="your_name" placeholder="Your Email" required/> -->
+								<!-- </div> -->
+								<!-- <div class="log-input">
+									<div class="log-input-left">
+									   <input type="email" name="email" class="user" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}"/>
+									</div>
+								</div> -->
+
+								<!-- <div class="form-group">
+									<label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+									<input type="password" name="password" id="your_pass" placeholder="Password" required/>
+								</div> -->
+
+								<!-- <div class="log-input">
+									<div class="log-input-left">
+									   <input type="password" class="lock" name="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address:';}"/>
+									</div>
+									
+									<div class="clearfix"> </div>
+								</div>
+								<div class="form-group form-button">
+									<input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+								</div>
+								<div>
+									<a href="{% url 'register' %}" class="btn btn-outline-success">Create an account</a>
+								</div>
+							</form> -->
+						
+						</div>
+						<div class="new_people">
+							<h2>For New People</h2>
+							<p></p>
+							<a href="{% url 'register' %}">Register Now!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block content %}
+
+	
+	<div class="main-banner banner text-center">
+	  <div class="container">    
+			<h1 style="margin-bottom: 2em;">Buy or sell   <span class="segment-heading">    anything online </span> with SwapSaman</h1>
+			
+			
+
+				<a href="{% url 'post_ad' %}">Post Free Ad</a>
+			
+
+	  </div>
+	</div>
+		<!-- content-starts-here -->
+		<div class="content">
+			<div class="categories">
+				<div class="container">
+					{% for cat in categories %}
+					<div class="col-md-2 focus-grid">
+						
+							<a href="{% url 'category_page' category_id=cat.id %}">
+
+							
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="{{cat.icon}}"></i></div>
+									<h4 class="clrchg">{{cat.name}}</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+							{% endfor %}
+
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="trending-ads">
+				<div class="container">
+				<!-- slider -->
+				<div class="trend-ads">
+					<h2>Trending Ads</h2>
+							<ul id="flexiselDemo3">
+								<li>
+									{% for prod in products %}
+									<div class="col-md-3 biseller-column">
+										<a href="/product/{{prod.slug}}">
+											<img src="/media/{{prod.image}}"/>
+											<span class="price">₹ {{prod.price}}</span>
+										</a> 
+										<div class="ad-info">
+											<h5>{{prod.title}}</h5>
+											<span>{{prod.updated_on}}</span>
+										</div>
+									</div>
+									{% endfor %}
+									
+								</li>
+								
+						</ul>
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+					   </script>
+					   <script type="text/javascript" src="/static/js/jquery.flexisel.js"></script>
+					</div>   
+			</div>
+			<!-- //slider -->				
+			</div>
+			<div class="mobile-app">
+				<div class="container">
+					<div class="col-md-5 app-left">
+						<img style="border-bottom: 0cap;" src="/static/images/app.png" alt="mobile-app">
+					</div>
+					<div class="col-md-7 app-right">
+						<h3>SwapSaman App is the <span>Easiest</span> way for Selling and buying second-hand goods</h3>
+						<p>Exciting news: SwapSaman is launching Android and iOS apps soon! Enjoy buying, selling, and bargaining on the go. Stay tuned for an enhanced mobile experience. Thank you for being part of SwapSaman! </p>
+						<p>Links will be updated when the rollout begins!</p>
+						<div class="app-buttons">
+							<div class="app-button">
+								<img src="/static/images/1.png" alt="">
+							</div>
+							<div class="app-button">
+								<img src="/static/images/2.png" alt="">
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		{% endblock %}

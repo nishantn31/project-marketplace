@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+<head>
+<title>SwapSaman: your one stop solution for marketplace </title>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-select.css">
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+<link rel="icon" href="/static/images/logo.png">
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="SwapSaman Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="/static/js/jquery.leanModal.min.js"></script>
+<link href="/static/css/jquery.uls.css" rel="stylesheet"/>
+<link href="/static/css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="/static/css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="/static/js/jquery.uls.data.js"></script>
+<script src="/static/js/jquery.uls.data.utils.js"></script>
+<script src="/static/js/jquery.uls.lcd.js"></script>
+<script src="/static/js/jquery.uls.languagefilter.js"></script>
+<script src="/static/js/jquery.uls.regionfilter.js"></script>
+<script src="/static/js/jquery.uls.core.js"></script>
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] 
+				} );
+			} );
+</script>
+</head>
+
+
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="{% url 'index' %}"><span>Swap</span>Saman</a>
+			</div>
+			<div class="header-right">
+				
+			{% if user.is_authenticated %}
+            <a style="margin-right: 30px;" href="{% url 'my_ads' %}" class="account" >My Ads</a>           
+            <a  href="{% url 'logout' %}" class="account" >Logout</a> 
+			{% else %}
+			<a href="{% url 'signin' %}" class="account" >Log In</a>
+			{% endif %}
+			</div>
+		</div>
+	</div>
+
+{% block content %}
+{% endblock %}
+
+		<!--footer section start-->		
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">About Us</h4>
+							<p>Welcome to SwapSaman, your one-stop destination for buying, selling, and bargaining on a diverse array of pre-loved items. </p>
+							<p>Uncover treasures, negotiate deals, and connect with sellers in a vibrant marketplace. Experience the thrill of turning old possessions into newfound joys at SwapSaman.</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Help</h4>
+							<ul>
+								<li><a href="{% url 'guide' %}">How it Works</a></li>						
+								
+								
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Information</h4>
+							<ul>	
+								<li><a href="{% url 'terms' %}">Terms of Use</a></li>
+								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>	
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+							<span class="hq">Our headquarters</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li style="text-transform: capitalize;"> New Delhi, India</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+91 9898 123 66</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:nishantn31@gmail.com" target="_blank">nishantn31@gmail.com</a></li>
+									<div class="clearfix"></div>
+								</ul>						
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>						
+				</div>	
+			</div>	
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="{% url 'index' %}"><span>Swap</span>Saman</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="https://www.facebook.com/nishant.nayan.56" target="_blank"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="https://twitter.com/NishantNayan29" target="_blank"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="https://nishant-portfolio-21.netlify.app/" target="_blank"><span>My Portfolio</span></a></li>
+						
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2024 SwapSaman. | Designed with  ❤️  by  <a href="https://www.linkedin.com/in/nishantn31/" target="_blank">Nishant Nayan</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+</body>
+</html>

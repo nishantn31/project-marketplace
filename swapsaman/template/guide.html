@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+	<!-- How it works -->
+		<div class="work-section">
+			<div class="container">
+				<h2 class="head">How It Works</h2>
+					<div class="work-section-head text-center" >
+						<p>Fast, easy and free to post an Ad and you will find, what you are looking for.</p>
+
+					</div>
+					<div class="work-section-grids text-center" >
+						<div class="col-md-3 work-section-grid" style="width: 50%; margin-bottom: 5em; ">
+							<img src="/static/images/sell.jpg" style="height: 250px; width: 250px;">
+							<h4 >Sell your product</h4>
+							<p style="margin: 5px; text-align:left;">1. <a href="{% url 'index' %}">Post a new Ad</a> for the product you want to sell. </p>
+							<p style="margin: 5px; text-align:left;">2. Fill in the details about your product and set a selling price.  </p>
+							<p style="margin: 5px; text-align:left;">3. Get price quoted by the buyers and their details on your posted Ad in "My Ads" section. </p>
+							<p style="margin: 5px; text-align:left;">4. Finalise the deal by negotiating with the buyer and make transaction with any mode of your preference. </p>
+						</div>
+						<div class="col-md-3 work-section-grid" style="width: 50%;">
+							<img src="/static/images/buy.jpg" style="height: 250px; width: 250px;">
+							<h4>Buy a product</h4>
+							<p style="margin: 5px; text-align:left;">1. Browse for the product you want to buy. </p>
+							<p style="margin: 5px; text-align:left;">2. Fill in the details in the form on the product page to quote your price to the seller directly. </p>
+							<p style="margin: 5px; text-align:left;">3. Contact the seller directly to start negotiation or wait for their response. </p>
+							<p style="margin: 5px; text-align:left;">4. Finalise the deal with seller at your requested price and make transaction to buy the product. </p>
+						</div>
+						<div class="clearfix"></div>
+						<a class="work" style="margin-top: 20px;" href="{% url 'index' %}">Get started Now</a>
+					</div>
+				</div>
+		</div>	
+	<!-- // How it works -->
+{% endblock %}

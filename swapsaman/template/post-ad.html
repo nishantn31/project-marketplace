@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+	<!-- Submit Ad -->
+	<div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="head">Post an Ad</h2>
+			<div class="post-ad-form">
+				<form method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<label>Select Category <span>*</span></label>
+					<select name="category" required>
+					  <option>Select Category</option>
+					  {% for cat in categories %}
+					  <option value="{{cat.id}}">{{cat.name}}</option>
+					  {% endfor %}
+					</select>
+					<div class="clearfix"></div>
+					<label>Ad Title <span>*</span></label>
+					<input type="text" name="title" class="phone" placeholder="" required>
+					<div class="clearfix"></div>
+					<label>Ad Description <span>*</span></label>
+					<textarea class="mess" name="description" placeholder="Write few lines about your product" required></textarea>
+					<label>Brand <span>*</span></label>
+					<input type="text" name="brand" class="phone" placeholder="" required>
+					<label>Price <span>*</span></label>
+					<input type="text" name="price" class="phone" placeholder="" required>
+
+					<label>Condition <span>*</span></label>
+					<select name="condition" class="" required>
+					  <option>Select Condition</option>
+					  
+					  <option value="Excellent">Excellent</option>
+					  <option value="Very Good">Very Good</option>
+					  <option value="Average">Average</option>
+					  <option value="Bad">Bad</option>
+					  <option value="Poor">Poor</option>
+					  
+					</select>
+					
+					<div class="clearfix"></div>
+				<div class="upload-ad-photos">
+				<label>Photos for your ad :</label>	
+					<div class="photos-upload-view">
+
+						<div>
+							<input type="file" id="fileselect" name="product_image" multiple="multiple" />
+							
+						</div>
+
+						</div>
+					<div class="clearfix"></div>
+						
+				
+					<!-- <div class="personal-details"> -->
+					<div class="personal-details">
+					
+						
+						<label>Your Mobile No <span>*</span></label>
+						<input type="text" name="contact" class="phone" placeholder="" required>
+						<div class="clearfix"></div>
+						
+						<p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+						<input  type="submit" value="Post">					
+						<div class="clearfix"></div>
+					</div>
+					</form>
+				
+				
+			</div>
+		</div>	
+	</div>
+	<!-- // Submit Ad -->
+	
+
+{% endblock %}

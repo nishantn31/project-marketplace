@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if status %}
+<script>
+    alert('{{status}}');
+</script>
+{% endif %}
+	<div class="single-page main-grid-border">
+		<div class="container">
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+				
+				
+				<li class="active"><a href="{% url 'category_page' category_id=product.category.id %}">{{product.category.name}}</a></li>
+				<li class="active">{{product.title}}</li>
+			</ol>
+
+			<div class="product-desc">
+				<div class="col-md-7 product-view">
+					<h2>{{product.title}}</h2>
+					<p>  Added on {{product.added_on}}</p>
+					<div class="flexslider">
+						<ul class="slides" >
+							{% for img in product_images %}
+							
+							<li data-thumb="/media/{{img.product_image}}">
+								<img height="500px" width="200px" src="/media/{{img.product_image}}" />
+							</li>
+							{% endfor %}
+							
+						</ul>
+					</div>
+					<!-- FlexSlider -->
+					  <script defer src="/static/js/jquery.flexslider.js"></script>
+					<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" />
+
+						<script>
+					
+					$(window).load(function() {
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: "thumbnails"
+					  });
+					});
+					</script>
+					<!-- //FlexSlider -->
+					
+					<div class="product-details">
+						<h4>Brand : <a href="#">{{product.brand}}</a></h4>
+						
+						
+						<p><strong>Description : </strong>{{product.description}}</p>
+					
+					</div>
+				</div>
+				<div class="col-md-5 product-details-grid">
+					<div class="item-price">
+						<div class="product-price">
+							<p class="p-price">Price</p>
+							<h3 class="rate">₹ {{product.price}}</h3>
+							<div class="clearfix"></div>
+						</div>
+						<div class="condition">
+							<p class="p-price">Condition</p>
+							<h4>{{product.condition}}</h4>
+							<div class="clearfix"></div>
+						</div>
+						<div class="itemtype">
+							<p class="p-price">Item Type</p>
+							<h4>{{product.category}}</h4>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="interested text-center">
+						<h4>Interested in this Ad?<small> Contact the Seller!</small></h4>
+						<p><i class="glyphicon glyphicon-earphone"></i>{{product.contact_number}}</p>
+					</div>
+						<div class="tips">
+						{% if user == product.owner %}
+						<h4>Price quoted by buyers : </h4>
+						<div style="width:350px;height:300px;line-height:2em;overflow:auto;padding:5px;background-color:#FCFADD;color:#714D03;scrollbar-base-color:#ff98006b;">
+							
+							<table class="table">
+								<thead class="thead-light">
+								  <tr>
+									<th scope="col">#</th>
+									<th scope="col">Name</th>
+									<th scope="col">Price Qouted</th>
+									<th scope="col">Contact No.</th>
+								  </tr>
+								</thead>
+								<tbody>
+								{% for buyer in buyers %}
+									<tr>
+										<th scope="row">{{forloop.counter}}</th>
+										<td>{{buyer.buyer.first_name}}</td>
+										<td>{{buyer.price}}</td>
+										<td>{{buyer.contact_number}}</td>
+									</tr>
+								{% endfor %}
+								</tbody>
+							  </table>
+							</div>
+						</div>
+						
+						
+						{% else %}
+
+						{% if user.is_authenticated %}
+						
+								<h4>Quote your price to the seller : </h4>
+								<form method="POST">
+									
+									{% csrf_token %}
+									<div class="form-group">
+										<label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+										<input type="number" name="contact" id="name" placeholder="Your Contact No." required />
+									</div>
+									<div class="form-group">
+										<label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+										<input type="number" name="price" id="name" placeholder="Quote your price in ₹" required />
+									</div>
+									<div class="form-group form-button">
+										<input type="submit" name="signup" id="signup" class="form-submit" value="Submit"/>
+									</div>
+										
+									</div>
+								</form>
+						{% else %}
+								<div>
+									<a href="{% url 'signin' %}" style="margin-bottom: 150px;" class="account" >Log In to quote your price to the seller</a> 
+								</div>
+
+						{% endif %}
+						{% endif %}
+				
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//single-page-->
+{% endblock %}
