@@ -46,12 +46,12 @@ def register(request):
         else:
             context['error'] = "A User with this email already exists"
 
-        check_user = authenticate(username=email, password=password)
+        # check_user = authenticate(username=email, password=password)
         
-        login(request, check_user)
-        if check_user.is_superuser or check_user.is_staff:
-            return HttpResponseRedirect('/admin')
-        return HttpResponseRedirect('/')
+        # login(request, check_user)
+        # if check_user.is_superuser or check_user.is_staff:
+        #     return HttpResponseRedirect('/admin')
+        # return HttpResponseRedirect('/')
         
     return render(request,'register.html', context)
 
